@@ -1,0 +1,141 @@
+{
+  "contract_version": "1",
+  "model_version": "electrical-iforest-v1",
+  "feature_version": "electrical-v1",
+  "feature_names": [
+    "power_value",
+    "power_delta",
+    "power_mean_5m",
+    "power_std_5m",
+    "power_mean_30m",
+    "power_std_30m",
+    "power_deviation_30m",
+    "voltage_value",
+    "voltage_delta",
+    "voltage_mean_5m",
+    "voltage_std_5m",
+    "voltage_mean_30m",
+    "voltage_std_30m",
+    "voltage_deviation_30m",
+    "current_value",
+    "current_delta",
+    "current_mean_5m",
+    "current_std_5m",
+    "current_mean_30m",
+    "current_std_30m",
+    "current_deviation_30m"
+  ],
+  "units": {
+    "value": "kW",
+    "voltage": "V",
+    "current": "A"
+  },
+  "policy_version": "electrical-v1",
+  "rule_policy": {
+    "version": "electrical-v1",
+    "minimum": 0.0,
+    "maximum": 20.0,
+    "interval_seconds": 60,
+    "tolerance_seconds": 5,
+    "frozen_seconds": 600,
+    "frozen_epsilon": 0.001,
+    "maximum_rate": 8.0
+  },
+  "electrical_policy": {
+    "power": {
+      "version": "electrical-v1",
+      "minimum": 0.0,
+      "maximum": 20.0,
+      "interval_seconds": 60,
+      "tolerance_seconds": 5,
+      "frozen_seconds": 600,
+      "frozen_epsilon": 0.001,
+      "maximum_rate": 8.0
+    },
+    "voltage": {
+      "version": "electrical-v1",
+      "minimum": 0,
+      "maximum": 300,
+      "interval_seconds": 60,
+      "tolerance_seconds": 5,
+      "frozen_seconds": 600,
+      "frozen_epsilon": 0.01,
+      "maximum_rate": 30
+    },
+    "current": {
+      "version": "electrical-v1",
+      "minimum": 0,
+      "maximum": 100,
+      "interval_seconds": 60,
+      "tolerance_seconds": 5,
+      "frozen_seconds": 600,
+      "frozen_epsilon": 0.01,
+      "maximum_rate": 40
+    }
+  },
+  "threshold": 0.5768143918451631,
+  "threshold_direction": "score_gt_threshold",
+  "versions": {
+    "python": "3.12.13",
+    "sklearn": "1.9.1",
+    "numpy": "2.5.4",
+    "joblib": "1.6.0"
+  },
+  "model_sha256": "79a163dccd902d94880c7c1b99c4a17667c809fa5370a87cd3424aadfc6b151f",
+  "prepared_sha256": "2b388d0643ec741a01a8f64aede1023924c90c14ebe8b9c8eac7f7f635d87292",
+  "source_sha256": "9f84b46ade8a2d8e1286ec4b2b6c2987a45a755c59f263be3b3b3d10dfbda3ff",
+  "parameters": {
+    "bootstrap": false,
+    "contamination": "auto",
+    "max_features": 1.0,
+    "max_samples": 256,
+    "n_estimators": 32,
+    "n_jobs": 1,
+    "random_state": 43,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "seed": 43,
+  "experiment_config": {
+    "model_version": "electrical-iforest-v1",
+    "feature_version": "electrical-v1",
+    "seed": 43,
+    "validation_seed": 3043,
+    "test_seed": 4043,
+    "n_estimators_candidates": [
+      32,
+      64
+    ],
+    "max_samples": 256,
+    "threshold_quantiles": [
+      0.97,
+      0.99,
+      0.995
+    ],
+    "train_fraction": 0.6,
+    "validation_fraction": 0.2,
+    "warmup_points": 30
+  },
+  "train_feature_rows": 43919,
+  "trained_at_utc": "2026-11-09T06:35:28.215011+00:00",
+  "splits": {
+    "train": {
+      "first": "2006-12-31T23:00:00+00:00",
+      "last": "2007-02-23T22:23:00+00:00",
+      "rows": 77724,
+      "unscored_warmup_points": 30
+    },
+    "validation": {
+      "first": "2007-02-23T22:24:00+00:00",
+      "last": "2007-03-13T22:11:00+00:00",
+      "rows": 25908,
+      "unscored_warmup_points": 30
+    },
+    "test": {
+      "first": "2007-03-13T22:12:00+00:00",
+      "last": "2007-03-31T21:59:00+00:00",
+      "rows": 25908,
+      "unscored_warmup_points": 30
+    }
+  }
+}

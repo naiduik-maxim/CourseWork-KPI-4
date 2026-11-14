@@ -1,0 +1,35 @@
+name: coursework
+
+services:
+  db:
+    image: timescale/timescaledb:2.25.2-pg17
+
+    environment:
+      POSTGRES_USER: telemetry
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-telemetry}
+      POSTGRES_DB: telemetry_copy
+      TIMESCALEDB_TELEMETRY: "off"
+
+    ports:
+      - "127.0.0.1:5433:5432"
+
+    volumes:
+      - telemetry-copy-db:/var/lib/postgresql/data
+
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - pg_isready -U telemetry -d telemetry_copy
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+    command:
+      - postgres
+      - -c
+      - shared_buffers=128MB
+      - -c
+      - max_connections=50
+
+volumes:
+  telemetry-copy-db:
