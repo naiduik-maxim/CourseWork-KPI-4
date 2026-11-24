@@ -1,0 +1,4 @@
+{"timestamp": "2026-11-19T15:23:48.040858+00:00", "level": "INFO", "event": "http_request", "request_id": "6341a446-46fd-4441-8d9f-800110b817b9", "duration_ms": 0.921, "status": 200}
+{"timestamp": "2026-11-19T15:23:48.481771+00:00", "level": "INFO", "event": "http_request", "request_id": "eacd5147-8852-4d63-9e53-0b1678fa18e8", "duration_ms": 82.154, "status": 200}
+{"timestamp": "2026-11-19T15:23:57.383482+00:00", "level": "INFO", "event": "http_request", "request_id": "b4b2b1fe-0ecb-4ff3-a724-22ca0bc534d4", "duration_ms": 2556.23, "status": 200}
+{"timestamp": "2026-11-19T15:25:45.353233+00:00", "level": "INFO", "event": "http_request", "request_id": "47fd9e37-6c5d-4ef6-82af-37eda707c7a2", "duration_ms": 434.597, "status": 200}

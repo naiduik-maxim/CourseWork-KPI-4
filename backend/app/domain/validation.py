@@ -134,7 +134,7 @@ class ValidationService:
 
         if (
             current.timestamp.tzinfo is None
-            or current.timestamp.utcoffset is None
+            or current.timestamp.utcoffset() is None
         ):
             raise ValueError("Timezone-aware timestamp required")
 

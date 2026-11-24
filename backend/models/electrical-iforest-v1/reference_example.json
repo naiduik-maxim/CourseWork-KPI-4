@@ -1,0 +1,256 @@
+{
+  "sensor_id": "household-electrical-001",
+  "policy_version": "electrical-v1",
+  "current": {
+    "timestamp": "2007-03-13T22:42:00+00:00",
+    "value": 1.482,
+    "eligible": true,
+    "voltage": 243.29,
+    "current": 6.0
+  },
+  "history": [
+    {
+      "timestamp": "2007-03-13T22:12:00+00:00",
+      "value": 2.556,
+      "eligible": true,
+      "voltage": 241.34,
+      "current": 11.2
+    },
+    {
+      "timestamp": "2007-03-13T22:13:00+00:00",
+      "value": 2.216,
+      "eligible": true,
+      "voltage": 241.73,
+      "current": 9.4
+    },
+    {
+      "timestamp": "2007-03-13T22:14:00+00:00",
+      "value": 2.432,
+      "eligible": true,
+      "voltage": 241.66,
+      "current": 10.8
+    },
+    {
+      "timestamp": "2007-03-13T22:15:00+00:00",
+      "value": 2.314,
+      "eligible": true,
+      "voltage": 242.01,
+      "current": 9.8
+    },
+    {
+      "timestamp": "2007-03-13T22:16:00+00:00",
+      "value": 2.512,
+      "eligible": true,
+      "voltage": 243.23,
+      "current": 11.6
+    },
+    {
+      "timestamp": "2007-03-13T22:17:00+00:00",
+      "value": 3.062,
+      "eligible": true,
+      "voltage": 243.23,
+      "current": 12.8
+    },
+    {
+      "timestamp": "2007-03-13T22:18:00+00:00",
+      "value": 3.044,
+      "eligible": true,
+      "voltage": 243.71,
+      "current": 13.0
+    },
+    {
+      "timestamp": "2007-03-13T22:19:00+00:00",
+      "value": 3.16,
+      "eligible": true,
+      "voltage": 243.56,
+      "current": 13.2
+    },
+    {
+      "timestamp": "2007-03-13T22:20:00+00:00",
+      "value": 2.008,
+      "eligible": true,
+      "voltage": 245.1,
+      "current": 8.2
+    },
+    {
+      "timestamp": "2007-03-13T22:21:00+00:00",
+      "value": 1.864,
+      "eligible": true,
+      "voltage": 245.19,
+      "current": 7.6
+    },
+    {
+      "timestamp": "2007-03-13T22:22:00+00:00",
+      "value": 1.776,
+      "eligible": true,
+      "voltage": 244.45,
+      "current": 7.2
+    },
+    {
+      "timestamp": "2007-03-13T22:23:00+00:00",
+      "value": 1.796,
+      "eligible": true,
+      "voltage": 244.04,
+      "current": 7.2
+    },
+    {
+      "timestamp": "2007-03-13T22:24:00+00:00",
+      "value": 1.772,
+      "eligible": true,
+      "voltage": 244.56,
+      "current": 7.2
+    },
+    {
+      "timestamp": "2007-03-13T22:25:00+00:00",
+      "value": 1.798,
+      "eligible": true,
+      "voltage": 244.44,
+      "current": 7.2
+    },
+    {
+      "timestamp": "2007-03-13T22:26:00+00:00",
+      "value": 1.77,
+      "eligible": true,
+      "voltage": 244.5,
+      "current": 7.2
+    },
+    {
+      "timestamp": "2007-03-13T22:27:00+00:00",
+      "value": 1.778,
+      "eligible": true,
+      "voltage": 243.18,
+      "current": 7.2
+    },
+    {
+      "timestamp": "2007-03-13T22:28:00+00:00",
+      "value": 1.606,
+      "eligible": true,
+      "voltage": 242.94,
+      "current": 6.6
+    },
+    {
+      "timestamp": "2007-03-13T22:29:00+00:00",
+      "value": 1.554,
+      "eligible": true,
+      "voltage": 242.79,
+      "current": 6.4
+    },
+    {
+      "timestamp": "2007-03-13T22:30:00+00:00",
+      "value": 1.514,
+      "eligible": true,
+      "voltage": 242.16,
+      "current": 6.2
+    },
+    {
+      "timestamp": "2007-03-13T22:31:00+00:00",
+      "value": 1.48,
+      "eligible": true,
+      "voltage": 242.15,
+      "current": 6.0
+    },
+    {
+      "timestamp": "2007-03-13T22:32:00+00:00",
+      "value": 1.498,
+      "eligible": true,
+      "voltage": 242.07,
+      "current": 6.2
+    },
+    {
+      "timestamp": "2007-03-13T22:33:00+00:00",
+      "value": 1.496,
+      "eligible": true,
+      "voltage": 242.83,
+      "current": 6.2
+    },
+    {
+      "timestamp": "2007-03-13T22:34:00+00:00",
+      "value": 1.514,
+      "eligible": true,
+      "voltage": 242.65,
+      "current": 6.2
+    },
+    {
+      "timestamp": "2007-03-13T22:35:00+00:00",
+      "value": 1.606,
+      "eligible": true,
+      "voltage": 241.84,
+      "current": 6.6
+    },
+    {
+      "timestamp": "2007-03-13T22:36:00+00:00",
+      "value": 1.582,
+      "eligible": true,
+      "voltage": 241.68,
+      "current": 6.4
+    },
+    {
+      "timestamp": "2007-03-13T22:37:00+00:00",
+      "value": 1.596,
+      "eligible": true,
+      "voltage": 241.45,
+      "current": 6.6
+    },
+    {
+      "timestamp": "2007-03-13T22:38:00+00:00",
+      "value": 1.572,
+      "eligible": true,
+      "voltage": 241.23,
+      "current": 6.4
+    },
+    {
+      "timestamp": "2007-03-13T22:39:00+00:00",
+      "value": 1.508,
+      "eligible": true,
+      "voltage": 242.45,
+      "current": 6.2
+    },
+    {
+      "timestamp": "2007-03-13T22:40:00+00:00",
+      "value": 1.478,
+      "eligible": true,
+      "voltage": 242.78,
+      "current": 6.0
+    },
+    {
+      "timestamp": "2007-03-13T22:41:00+00:00",
+      "value": 1.498,
+      "eligible": true,
+      "voltage": 242.9,
+      "current": 6.2
+    }
+  ],
+  "expected_features": [
+    1.482,
+    -0.016000000000000014,
+    1.5304,
+    0.0454559127067096,
+    1.9120000000000001,
+    0.5028391392881028,
+    -0.43000000000000016,
+    243.29,
+    0.38999999999998636,
+    242.16199999999998,
+    0.6906634491559602,
+    242.92833333333328,
+    1.1338697260071617,
+    0.3616666666667072,
+    6.0,
+    -0.20000000000000018,
+    6.279999999999999,
+    0.2039607805437113,
+    7.966666666666666,
+    2.2827371484445793,
+    -1.966666666666666
+  ],
+  "expected_result": {
+    "status": "completed",
+    "anomaly_score": 0.371813493365895,
+    "threshold": 0.5768143918451631,
+    "is_anomaly": false,
+    "model_version": "electrical-iforest-v1",
+    "feature_version": "electrical-v1",
+    "reason": null
+  },
+  "absolute_tolerance": 1e-10
+}

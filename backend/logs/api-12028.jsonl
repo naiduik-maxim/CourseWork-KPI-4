@@ -1,0 +1,7 @@
+{"timestamp": "2026-11-24T15:00:42.074763+00:00", "level": "INFO", "event": "http_request", "request_id": "b5ac961b-47d0-44eb-83e0-5adc2f8cb69e", "duration_ms": 13.009, "status": 422}
+{"timestamp": "2026-11-24T15:00:52.676762+00:00", "level": "INFO", "event": "http_request", "request_id": "24977581-e907-4d1e-b24c-99d5736c8a55", "duration_ms": 4.893, "status": 200}
+{"timestamp": "2026-11-24T15:00:52.987432+00:00", "level": "INFO", "event": "http_request", "request_id": "23f02d24-994c-490c-9474-062ede4b1597", "duration_ms": 58.74, "status": 200}
+{"timestamp": "2026-11-24T15:01:01.833173+00:00", "level": "INFO", "event": "http_request", "request_id": "bef00fda-6006-4d93-8612-3223103bff88", "duration_ms": 2160.757, "status": 200}
+{"timestamp": "2026-11-24T15:01:56.581574+00:00", "level": "INFO", "event": "http_request", "request_id": "ce6c1bd6-0b38-4867-bb58-3342139344f3", "duration_ms": 103.146, "status": 200}
+{"timestamp": "2026-11-24T15:03:24.096799+00:00", "level": "INFO", "event": "http_request", "request_id": "44178118-6312-4808-8ef7-e7bd29219eea", "duration_ms": 50.882, "status": 200}
+{"timestamp": "2026-11-24T15:05:57.403002+00:00", "level": "INFO", "event": "http_request", "request_id": "962c997a-e0a3-4191-a5a3-074ec0ea45c7", "duration_ms": 3.499, "status": 200}

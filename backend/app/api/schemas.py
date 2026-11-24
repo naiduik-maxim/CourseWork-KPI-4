@@ -21,6 +21,7 @@ QualityFlag = Literal[
     "irregular_timestamp",
     "insufficient_history",
     "analysis_error",
+    "inconsistent_power",
 ]
 
 class PointInput(BaseModel):
@@ -79,7 +80,12 @@ class PointInput(BaseModel):
     @classmethod
     def utc_timestamp(cls, value: datetime) -> datetime:
         """Привести перевірений час до UTC."""
-        return value.astimezone(timezone.utc)
+        try:
+            return value.astimezone(timezone.utc)
+        except OverflowError as e:
+            raise ValueError(
+                "timestamp is outside the supported UTC range"
+            ) from e
 
 
     @field_validator("value", "voltage", "current", mode="before")
@@ -203,3 +209,14 @@ class EventOutput(BaseModel):
     missing_count: int
 
     detected_at: datetime
+
+
+class SensorStatusOutput(BaseModel):
+    """Своєчасність надходження вимірювань одного датчика."""
+
+    sensor_id: str
+    status: Literal["awaiting_first_measurement", "on_time", "overdue"]
+    last_measurement_at: AwareDatetime | None
+    next_expected_at: AwareDatetime | None
+    interval_seconds: int
+    tolerance_seconds: int

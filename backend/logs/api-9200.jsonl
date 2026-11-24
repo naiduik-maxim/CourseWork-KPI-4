@@ -1,0 +1,2 @@
+{"timestamp": "2026-11-19T15:19:39.297535+00:00", "level": "INFO", "event": "http_request", "request_id": "f84b506e-683b-4373-8b45-5aad663b0d57", "duration_ms": 2171.903, "status": 500}
+{"timestamp": "2026-11-19T15:19:39.298065+00:00", "level": "ERROR", "event": "unhandled_error", "request_id": "f84b506e-683b-4373-8b45-5aad663b0d57", "error_type": "AttributeError"}

@@ -83,13 +83,6 @@ async def seed(
 
                 await session.flush()
 
-                session.add(
-                    SensorState(
-                        sensor_id=sensor_id,
-                        version=0,
-                    )
-                )
-
             elif (
                 sensor.metric != metric
                 or sensor.policy_version != policy.version
@@ -97,6 +90,10 @@ async def seed(
             ):
                 raise ValueError("Existing sensor has a different model/policy")
 
+            state = await session.get(SensorState, sensor_id)
+            if state is None:
+                session.add(SensorState(sensor_id=sensor_id, version=0))
+                
     finally:
         await engine.dispose()
 
